@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidemenu {
+    width: 200px;
+    background-color: #ffffff00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+}
+
+.content {
+    margin-left: 200px; /* Adjust margin to match sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.glow-button {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(255, 0, 247);
+    background-color: #ffffff09;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.glow-button:hover {
+    color: rgb(255, 0, 247);
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+}
+
+#canvas{
+    position:absolute;
+    border:1px solid red;
+    width:1440px;height:920px;
+}
+
+.right{
+    margin-left:100px; 
+}
+
+.web-circle {
+position: relative;
+width: 100px;
+height: 100px;
+background-color: #333;
+color: white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+
+.web-circle:hover {
+transform: scale(1.1);
+}
